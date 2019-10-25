@@ -1,0 +1,17 @@
+192.168.10.70
+
+SELECT 姓名,科目
+CASE
+WHEN 成绩 > 90 AND 成绩 <= 100  THEN 'A'
+WHEN 成绩 > 75 AND 成绩 <= 89  THEN 'B'
+WHEN 成绩 > 60 AND 成绩 <= 74 THEN 'C'
+ELSE 'D' END 等级,
+FROM
+成绩表
+where 科目 = '语文'
+
+PDD2019090501462891975
+PDD2019090501353339936
+
+
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt　要下的包名
